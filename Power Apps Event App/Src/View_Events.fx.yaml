@@ -1,0 +1,146 @@
+View_Events As screen:
+    Fill: =RGBA(232, 244, 217, 1)
+
+    "Gallery1 As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver4.0'":
+        Height: =1046
+        Items: |
+            =//Filter(Sort(Search(Events,TextInput1.Text,"Title"),ID,Descending),'Event Date'>=Today())
+            Filter(Sort(Search(Events,TextInput1.Text,"Title"),'Event Date',Ascending),'Event Date'>=Today())
+            
+            //Filter(Events,'Event Date'>=Today())
+            
+            
+            //Filter(Events,'Event Date'>=Today())
+        Layout: =Layout.Vertical
+        OnSelect: =Navigate(Event_Details)
+        TemplatePadding: =0
+        TemplateSize: =Min(160, Self.Height - 60)
+        Transition: =Transition.Pop
+        Width: =755
+        X: =10
+        Y: =232
+        ZIndex: =1
+
+        Image1 As image:
+            Height: =128
+            Image: =First(ThisItem.Attachments).Value
+            OnSelect: =Navigate(Event_Details)
+            Width: =128
+            X: =16
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =1
+
+        Title1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Title
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - Image1.Width - 104
+            X: =Image1.X + Image1.Width + 24
+            Y: =44
+            ZIndex: =2
+
+        Subtitle1 As label:
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'Event Date'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Title1.Width
+            X: =Title1.X
+            Y: =Title1.Y + Title1.Height + 4
+            ZIndex: =3
+
+        NextArrow1 As icon.ChevronRight:
+            AccessibleLabel: =Self.Tooltip
+            Height: =60
+            Icon: =Icon.ChevronRight
+            OnSelect: =Navigate(Event_Details)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Tooltip: ="View item details"
+            Width: =60
+            X: =Parent.TemplateWidth - Self.Width - 5
+            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            ZIndex: =4
+
+        Separator1 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =5
+
+    TextInput1 As text:
+        Default: =""
+        Height: =60
+        HintText: ="Search Events"
+        Size: =18
+        Width: =683
+        X: =41
+        Y: =143
+        ZIndex: =2
+
+    Rectangle1_1 As rectangle:
+        Fill: =RGBA(0, 134, 208, 1)
+        Width: =768
+        ZIndex: =3
+
+    Icon4_1 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =100
+        Icon: =Icon.BackArrow
+        OnSelect: = Navigate(Home)
+        Width: =67
+        X: =10
+        ZIndex: =4
+
+    Label5 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =81
+        Size: =45
+        Text: ="Events "
+        Width: =251
+        X: =257
+        Y: =9
+        ZIndex: =5
+
+    Icon7 As icon.Add:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =84
+        Icon: =Icon.Add
+        OnSelect: =Navigate(New_Events)
+        Width: =118
+        X: =647
+        Y: =9
+        ZIndex: =6
+
+    Label8 As label:
+        Height: =57
+        Text: =
+        Width: =467
+        X: =41
+        Y: =301
+        ZIndex: =7
+
+    Button5 As button:
+        Height: =72
+        OnSelect: =Navigate(All_Events_Screen)
+        Size: =25
+        Text: ="All Events"
+        Width: =768
+        Y: =1293
+        ZIndex: =8
+

@@ -1,0 +1,30 @@
+{
+  "2e0d708f-6aef-4257-a17a-72e7a01ae135": {
+    "connectionParameters": {
+      "sku": "Enterprise"
+    },
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1568/1.0.1568.2757/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://ekasila.sharepoint.com/sites/CSE-ak": {
+        "dataSources": {
+          "Events": {
+            "tableName": "d9d3aaaf-259f-4ff4-9b7d-405281dd5eba"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Events"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "2e0d708f-6aef-4257-a17a-72e7a01ae135"
+  }
+}

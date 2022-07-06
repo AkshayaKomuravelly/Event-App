@@ -1,0 +1,40 @@
+Home As screen:
+    BackgroundImage: =
+    Fill: =RGBA(232, 244, 217, 1)
+
+    Button2 As button:
+        Height: =205
+        OnSelect: =Navigate(New_Events)
+        Size: =20
+        Text: ="Submit New Event"
+        Width: =333
+        X: =228
+        Y: =711
+        ZIndex: =1
+
+    Button3 As button:
+        Height: =190
+        OnSelect: =Navigate(View_Events)
+        Size: =20
+        Text: ="View Events"
+        Width: =333
+        X: =228
+        Y: =407
+        ZIndex: =2
+
+    Rectangle1_4 As rectangle:
+        Fill: =RGBA(0, 134, 208, 1)
+        Width: =768
+        ZIndex: =3
+
+    Label3 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =100
+        Size: =50
+        Text: ="Events"
+        Width: =562
+        X: =103
+        ZIndex: =4
+

@@ -1,0 +1,18 @@
+All_Events_Image_Screen As screen:
+    Fill: =RGBA(232, 244, 217, 1)
+
+    Image3_1 As image:
+        Height: =1366
+        Image: =First(Gallery1_1.Selected.Attachments).Value
+        OnSelect: =Navigate(All_Events_Details_Screen)
+        Width: =759
+        ZIndex: =1
+
+    Label7 As label:
+        FontWeight: =FontWeight.Semibold
+        Size: =18
+        Text: ="Tap to close "
+        X: =304
+        Y: =33
+        ZIndex: =2
+

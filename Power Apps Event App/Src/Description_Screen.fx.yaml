@@ -1,0 +1,69 @@
+Description_Screen As screen:
+    Fill: =RGBA(232, 244, 217, 1)
+
+    FormViewer2 As formViewer:
+        DataSource: =Events
+        Height: =1250
+        Item: =Gallery1.Selected
+        NumberOfColumns: =1
+        Width: =768
+        Y: =96
+        ZIndex: =1
+
+        Description_DataCard1 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="Description"
+            Default: =ThisItem.Description
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@Events],DataSourceInfo.DisplayName,"Description")
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =1247
+            Required: =false
+            Width: =768
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+            DataCardValue9 As label:
+                DisplayMode: =Parent.DisplayMode
+                FontWeight: =FontWeight.Semibold
+                Height: =1220
+                LineHeight: =1.8
+                Overflow: =Overflow.Scroll
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =25
+                Text: =Parent.Default
+                VerticalAlign: =VerticalAlign.Top
+                Width: =704
+                X: =33
+                Y: =23
+                ZIndex: =2
+
+    Rectangle1_5 As rectangle:
+        Fill: =RGBA(0, 134, 208, 1)
+        Width: =768
+        ZIndex: =2
+
+    Icon4_3 As icon.BackArrow:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =79
+        Icon: =Icon.BackArrow
+        OnSelect: = Navigate(Event_Details)
+        Width: =75
+        X: =23
+        Y: =10
+        ZIndex: =3
+
+    Label14 As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =100
+        Size: =32
+        Text: ="Description"
+        Width: =491
+        X: =146
+        ZIndex: =4
+

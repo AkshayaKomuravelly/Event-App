@@ -1,0 +1,30 @@
+Delete_Screen As screen:
+    Fill: =RGBA(232, 244, 217, 1)
+
+    Label1 As label:
+        Align: =Align.Center
+        Height: =350
+        Size: =60
+        Text: ="Your Event is Deleted"
+        Width: =680
+        X: =30
+        Y: =330
+        ZIndex: =1
+
+    Icon2 As icon.Trash:
+        Height: =334
+        Icon: =Icon.Trash
+        Width: =354
+        X: =193
+        Y: =660
+        ZIndex: =2
+
+    Icon6 As icon.BackArrow:
+        Height: =145
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(View_Events)
+        Width: =145
+        X: =297
+        Y: =1062
+        ZIndex: =3
+

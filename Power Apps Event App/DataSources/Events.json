@@ -1,0 +1,46 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+    "CdpRevision": {
+      "BaseUrl": "/",
+      "LastChangedTimeString": "2022-04-12T16:42:48.4970000Z",
+      "RevisionNumber": 1
+    },
+    "ConnectedDataSourceInfoNameMapping": {
+      "{Attachments}": "Attachments",
+      "{Attachments}@odata.type": "{Attachments} ({Attachments}@odata.type)",
+      "{FilenameWithExtension}": "File name with extension",
+      "{FullPath}": "Full Path",
+      "{HasAttachments}": "Has attachments",
+      "{Identifier}": "Identifier",
+      "{IsFolder}": "IsFolder",
+      "{Link}": "Link to item",
+      "{ModerationComment}": "Comments associated with the content approval of this list item",
+      "{ModerationStatus}": "Content approval status",
+      "{Name}": "Name",
+      "{Path}": "Folder path",
+      "{Thumbnail}": "Thumbnail",
+      "{TriggerWindowEndToken}": "Trigger Window End Token",
+      "{TriggerWindowStartToken}": "Trigger Window Start Token",
+      "{VersionNumber}": "Version number",
+      "Author": "Created By",
+      "Author#Claims": "Created By Claims",
+      "ComplianceAssetId": "Compliance Asset Id",
+      "Created": "Created",
+      "Description": "Description",
+      "Editor": "Modified By",
+      "Editor#Claims": "Modified By Claims",
+      "Event_x0020_Date": "Event Date",
+      "ID": "ID",
+      "Link": "Link",
+      "Modified": "Modified",
+      "Title": "Title"
+    },
+    "DatasetName": "https://ekasila.sharepoint.com/sites/CSE-ak",
+    "EncodeDataset": true,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "Name": "Events",
+    "Type": "ConnectedDataSourceInfo"
+  }
+]
